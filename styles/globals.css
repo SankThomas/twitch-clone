@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Hind", sans-serif;
 }
 
 a {
@@ -13,4 +18,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+p {
+  color: #4c1d95;
+}
+
+button {
+  @apply select-none;
+}
+
+.btn-light {
+  @apply bg-gray-200 py-1 px-2 rounded text-sm font-semibold hover:bg-gray-300;
+}
+
+.btn-primary {
+  @apply bg-purple-700 py-1 px-2 rounded text-white text-sm font-semibold hover:bg-purple-800;
+}
+
+input {
+  @apply bg-gray-200 p-2 rounded;
 }
